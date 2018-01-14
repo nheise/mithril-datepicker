@@ -39,9 +39,13 @@ var DatePicker = {
             m( "div", model.currentDate.toDateString() ),
             m( "div", model.currentDate.getMonth() ),
             m( "div", new Date( 2018, 0, 1 ).toDateString() ),
+            m( "div", new Date( 2018, 0, 1 ).getDay() ),
             m( "div", new Date( 2018, 0, 31 ).toDateString() ),
+            m( "div", new Date( 2018, 0, 31 ).getDay() ),
             m( "div", new Date( 2018, 1, 0 ).getDate() ),
+            m( "div", new Date( 2018, 1, 0 ).toDateString() ),
             m( "div", new Date( 2018, 0, 32 ).toDateString() ),
+            m( "div", new Date( 2018, 0, -1 ).toDateString() ),
             m( "div", model.daysInMonth )
         )
     }
